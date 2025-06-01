@@ -1,0 +1,108 @@
+@font-face {
+    font-family: "Barriecito";
+    src: url(fonts/Barriecito/Barriecito-Regular.ttf);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Noto_Serif";
+    src: url(fonts/Noto_Serif/NotoSerif-VariableFont_wdth\,wght.ttf);
+    font-weight: normal;
+}
+
+body {
+    margin: 0;
+}
+
+.grid {
+    display: grid;
+    grid-area:
+        header,
+        nav,
+        content,
+        footer;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 1rem;
+    background-color: #2f64d6;
+    color: white;
+}
+
+.header>p {
+    margin-right: 0.5rem;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding: 0.5rem;
+    background-color: #f8db27;
+}
+
+.nav>a {
+    margin-right: 0.5rem;
+}
+
+.nav>a {
+    color: #00a2ff;
+}
+
+.nav>a:visited {
+    color: #00aeff;
+}
+
+.content {
+    padding-left: 2rem;
+}
+
+.content>.kuvaus {
+    padding-right: 40rem;
+}
+
+.arvostelu {
+    padding-left: 2rem;
+    padding-right: 40rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Barriecito";
+}
+
+h1 {
+    font-size: 48px;
+}
+
+p,
+a {
+    font-family: "Noto_Serif";
+}
+
+#simpsons_banner {
+    width: 100vw;
+    margin-left: -2rem;
+}
+
+#springfield {
+    border: 2px solid brown;
+}
+
+#springfield_kuvaus {
+    display: flex;
+    flex-direction: row;
+    margin-top: 2vw;
+}
+
+#springfield_kuvaus>.kuvaus {
+    padding-left: 5rem;
+    padding-right: 40rem;
+}
