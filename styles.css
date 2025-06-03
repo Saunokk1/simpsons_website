@@ -177,9 +177,10 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-left: -2rem;
 }
 
-.card >img {
+.card > a > img {
     width: 18rem;
     height: 10rem;
 }
