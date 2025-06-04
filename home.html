@@ -15,45 +15,47 @@
 
         <div class="header">
 
-            <img src="photos/Simpsons-logo.png" alt="Simpsons-logo">
+            <a href="index.html"><img src="photos/Simpsons-logo.png" alt="Simpsons-logo"></a>
 
             <h2>Simpsons Web Page</h2>
         </div>
 
         <div class="nav">
-            <a href="springfield.html">Springfield</a>
+            <div class="active"><a href="springfield.html">Springfield</a></div>
             <a href="characters.html">Characters</a>
             <a href="forum.html">Forum</a>
         </div>
 
-        <div class="content">
+        <div class="content" id="content">
+
+            <h2>Simpsons Home</h2>
 
             <div class="card-row">
                 <div class="card">
                     <p>Living Room:</p>
-                    <a href="livingroom.html"><img src="photos/Simpsons-livingroom.jfif" alt=""></a>
+                    <img src="photos/Simpsons-livingroom.jfif" onclick="fullPhoto(event)">
+                </div>
+                <div class="card">
+                    <p>Homer And Marges Room:</p>
+                    <img src="photos/margesroom.jfif" alt="" onclick="fullPhoto(event)">
                 </div>
                 <div class="card">
                     <p>Kitchen:</p>
-                    <a href="kitchen.html"><img src="photos/kitchen.jfif" alt=""></a>
-                </div>
-                <div class="card">
-                    <p>Barts Room:</p>
-                    <a href="bartsroom.html"><img src="photos/bartsroom.jfif" alt=""></a>
+                    <img src="photos/kitchen.jfif" alt="" onclick="fullPhoto(event)">
                 </div>
             </div>
             <div class="card-row">
                 <div class="card">
+                    <p>Barts Room:</p>
+                    <img src="photos/bartsroom.jfif" onclick="fullPhoto(event)">
+                </div>
+                <div class="card">
                     <p>Lisas Room:</p>
-                    <a href="lisasroom.html"><img src="photos/lisasroom.jpg" alt=""></a>
+                    <img src="photos/lisasroom.jpg" onclick="fullPhoto(event)">
                 </div>
                 <div class="card">
                     <p>Maggies Room:</p>
-                    <a href="maggiesroom.html"><img src="photos/download.jfif" alt=""></a>
-                </div>
-                <div class="card">
-                    <p>Main Bedroom:</p>
-                    <a href="bedroom.html"><img src="photos/margesroom.jfif" alt=""></a>
+                    <img src="photos/download.jfif" onclick="fullPhoto(event)">
                 </div>
             </div>
 

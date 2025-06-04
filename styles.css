@@ -7,7 +7,7 @@
 @font-face {
     font-family: "Oswald";
     src: url(fonts/Oswald/Oswald-VariableFont_wght.ttf);
-    font-weight: normal;
+    font-weight: 300;
 }
 
 body {
@@ -30,15 +30,14 @@ body {
     align-items: center;
     gap: 2rem;
     padding: 1rem;
-    background-color: #2f64d6;
+    background-color: #1769B6;
     color: white;
     font-size: 1.5rem;
     height: 6rem;
-    background-image: linear-gradient(to right, #2f64d6, #0ea7ff);
 
 }
 
-.header>img {
+.header>a>img {
     height: 5rem;
 }
 .header>p {
@@ -51,15 +50,21 @@ body {
     justify-content: left;
     gap: 0.5rem;
     align-items: center;
-    padding: 0.5rem;
-    background-color: #f8db27;
+    padding-left: 1rem;
+    background-color: #fccb00;
 }
 
-.nav>a {
+.nav>a, .nav>.active {
     margin-right: 0.5rem;
     font-family: "Oswald";
     font-size: 1.2rem;
     padding: 0.5rem;
+}
+
+.nav>.active {
+    background-color: #1769b6;
+    margin: 0;
+    -webkit-text-fill-color: white;;
 }
 
 .nav>a {
@@ -100,6 +105,7 @@ p,
 a {
     font-family: "Oswald";
 }
+
 
 #simpsons_banner {
     width: 100vw;
@@ -180,7 +186,50 @@ a {
     margin-left: -2rem;
 }
 
-.card > a > img {
+.card > img {
     width: 18rem;
     height: 10rem;
+}
+
+.card > img:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#jslink:hover {
+    cursor: pointer;
+    color: #ff9100;
+}
+
+#fullscreen {
+    width: 100vw;
+}
+
+.item-row {
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.item > a > img {
+    height: 18rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.473);
+}
+
+.item > img:hover {
+    cursor: pointer;
+    transform: translateY(2px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.603);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.picntext {
+    display: flex;
+    padding-top: 2rem;
 }
