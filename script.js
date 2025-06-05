@@ -16,7 +16,7 @@ function fullPhoto(event) {
 
     a.addEventListener('click', function () {
         content.innerHTML = OldContent
-    })
+    }) //juu
 
     photo.id = "fullscreen"
     photo.removeAttribute('onclick')
