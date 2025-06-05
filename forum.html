@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etusivu</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="forum.js" defer></script>
+</head>
+
+<body>
+
+    <div class="grid">
+
+        <div class="header">
+
+            <a href="index.html"><img src="photos/Simpsons-logo.png" alt="Simpsons-logo"></a>
+
+            <h2>Simpsons Web Page</h2>
+        </div>
+
+        <div class="nav">
+            <a href="springfield.html"><button>Springfield</button></a>
+            <a href="characters.html"><button>Characters</button></a>
+            <div class="active"><a href="forum.html"><button>Forum</button></a></div>
+        </div>
+
+        <div class="content">
+
+            <div id="content">
+
+            </div>
+
+            
+        
+        <button onclick="showDialog()" id="dialogbutton">Send Message</button>
+
+        <div class="center">
+        <dialog id="dialogi">
+        <img src="photos/x.png" onclick="closeDialog()" id="close">
+        <form action="">
+            <label for="title">Title:</label>
+                <input type="text" id="title" name="title"><br><br>
+
+            <label for="from">From:</label>
+                <input type="text" id="from" name="for"><br><br>
+
+            <label for="body">Message:</label><br>
+                <textarea name="body" id="body" style="width: 400px; height: 150px; resize: none;"></textarea><br><br>
+
+            <button onclick="send(event)" type="submit" name="submit" id="submit">Send</button>
+    
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
